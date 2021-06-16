@@ -1,0 +1,1355 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A52C769F-6540-4221-84B7-AE0D8158FACA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResearchAcademicUnit</RootNamespace>
+    <AssemblyName>ResearchAcademicUnit</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=3.2.1.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.3.2.1\lib\net452\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="DevOne.Security.Cryptography.BCrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.1.0.0.0\lib\DevOne.Security.Cryptography.BCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>C:\Users\mkarazoon.JUGS\Downloads\DownloadMultipleFiles\Bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\mkarazoon.JUGS\Downloads\Itextsharp\Itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.4.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\mkarazoon.JUGS\Downloads\Itextsharp\Itextsharp\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\..\..\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Achievements.aspx" />
+    <Content Include="Admin_FormInfo.aspx" />
+    <Content Include="Admin_RequestsFollowUp.aspx" />
+    <Content Include="Admin_SupervisorReport.aspx" />
+    <Content Include="Admin_WorkFlow.aspx" />
+    <Content Include="Agreement.aspx" />
+    <Content Include="AllRequests.aspx" />
+    <Content Include="AvailableCourse.aspx" />
+    <Content Include="Books.aspx" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.min.js" />
+    <Content Include="ChangePW.aspx" />
+    <Content Include="Com_ExceptionLoad.aspx" />
+    <Content Include="Com_JobTitles.aspx" />
+    <Content Include="Com_JournalDataBase.aspx" />
+    <Content Include="Com_OutSupervisor.aspx" />
+    <Content Include="Com_SupervisorAdoptedReport.aspx" />
+    <Content Include="Com_SupervisorAdopted.aspx" />
+    <Content Include="css\font-awesome\css\all.css" />
+    <Content Include="css\font-awesome\css\font-awesome.css" />
+    <Content Include="css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="css\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="css\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="css\style-responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="FillOnlineReport.aspx" />
+    <Content Include="FollowUpFormThesisView.aspx" />
+    <Content Include="FollowUpFormThesis.aspx" />
+    <Content Include="GS_ChangeTrack.aspx" />
+    <Content Include="GS_NoObjection.aspx" />
+    <Content Include="GS_ThesisTitle.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="images\footer.png" />
+    <Content Include="images\gs.png" />
+    <Content Include="images\MEU.jpg" />
+    <Content Include="images\newFooter.png" />
+    <Content Include="images\tarawneh_sig.jpeg" />
+    <Content Include="jquery-mask-input\jquery.mask.min.js" />
+    <Content Include="lib\advanced-datatable\css\demo_page.css" />
+    <Content Include="lib\advanced-datatable\css\demo_table.css" />
+    <Content Include="lib\advanced-datatable\css\demo_table_jui.css" />
+    <Content Include="lib\advanced-datatable\css\DT_bootstrap.css" />
+    <Content Include="lib\advanced-datatable\css\jquery.dataTables.css" />
+    <Content Include="lib\advanced-datatable\css\jquery.dataTables_themeroller.css" />
+    <Content Include="lib\advanced-datatable\images\back_disabled.png" />
+    <Content Include="lib\advanced-datatable\images\back_enabled.png" />
+    <Content Include="lib\advanced-datatable\images\back_enabled_hover.png" />
+    <Content Include="lib\advanced-datatable\images\details_close.png" />
+    <Content Include="lib\advanced-datatable\images\details_open.png" />
+    <Content Include="lib\advanced-datatable\images\favicon.ico" />
+    <Content Include="lib\advanced-datatable\images\forward_disabled.png" />
+    <Content Include="lib\advanced-datatable\images\forward_enabled.png" />
+    <Content Include="lib\advanced-datatable\images\forward_enabled_hover.png" />
+    <Content Include="lib\advanced-datatable\images\sort_asc.png" />
+    <Content Include="lib\advanced-datatable\images\sort_asc_disabled.png" />
+    <Content Include="lib\advanced-datatable\images\sort_both.png" />
+    <Content Include="lib\advanced-datatable\images\sort_desc.png" />
+    <Content Include="lib\advanced-datatable\images\sort_desc_disabled.png" />
+    <Content Include="lib\advanced-datatable\js\DT_bootstrap.js" />
+    <Content Include="lib\advanced-datatable\js\jquery.dataTables.js" />
+    <Content Include="lib\advanced-datatable\js\jquery.dataTables.min.js" />
+    <Content Include="lib\advanced-datatable\js\jquery.js" />
+    <Content Include="lib\advanced-form-components.js" />
+    <Content Include="lib\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="lib\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="lib\bootstrap-daterangepicker\date.js" />
+    <Content Include="lib\bootstrap-daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="lib\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="lib\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="lib\bootstrap-daterangepicker\moment.min.js" />
+    <Content Include="lib\bootstrap-datetimepicker\css\datetimepicker.css" />
+    <Content Include="lib\bootstrap-datetimepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="lib\bootstrap-fileupload\bootstrap-fileupload.css" />
+    <Content Include="lib\bootstrap-fileupload\bootstrap-fileupload.js" />
+    <Content Include="lib\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="lib\bootstrap-switch.js" />
+    <Content Include="lib\bootstrap-timepicker\compiled\timepicker.css" />
+    <Content Include="lib\bootstrap-timepicker\js\bootstrap-timepicker.js" />
+    <Content Include="lib\bootstrap-wysihtml5\bootstrap-wysihtml5.css" />
+    <Content Include="lib\bootstrap-wysihtml5\bootstrap-wysihtml5.js" />
+    <Content Include="lib\bootstrap-wysihtml5\wysihtml5-0.3.0.js" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\calendar-conf-events.js" />
+    <Content Include="lib\chart-master\Chart.js" />
+    <Content Include="lib\chartjs-conf.js" />
+    <Content Include="lib\ckeditor\ckeditor.js" />
+    <Content Include="lib\common-scripts.js" />
+    <Content Include="lib\dropzone\css\dropzone.css" />
+    <Content Include="lib\dropzone\dropzone.js" />
+    <Content Include="lib\dropzone\images\spritemap%402x.png" />
+    <Content Include="lib\dropzone\images\spritemap.png" />
+    <Content Include="lib\easy-pie-chart.js" />
+    <Content Include="lib\fancybox\jquery.fancybox.css" />
+    <Content Include="lib\fancybox\jquery.fancybox.js" />
+    <Content Include="lib\file-uploader\css\jquery.fileupload-noscript.css" />
+    <Content Include="lib\file-uploader\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="lib\file-uploader\css\jquery.fileupload-ui.css" />
+    <Content Include="lib\file-uploader\css\jquery.fileupload.css" />
+    <Content Include="lib\file-uploader\img\loading.gif" />
+    <Content Include="lib\file-uploader\img\progressbar.gif" />
+    <Content Include="lib\file-uploader\js\cors\jquery.xdr-transport.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-audio.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-image.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-process.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-ui.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-validate.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload-video.js" />
+    <Content Include="lib\file-uploader\js\jquery.fileupload.js" />
+    <Content Include="lib\file-uploader\js\jquery.iframe-transport.js" />
+    <Content Include="lib\file-uploader\js\main.js" />
+    <Content Include="lib\file-uploader\js\vendor\jquery.ui.widget.js" />
+    <Content Include="lib\flotchart-conf.js" />
+    <Content Include="lib\flot\jquery.flot.crosshair.js" />
+    <Content Include="lib\flot\jquery.flot.js" />
+    <Content Include="lib\flot\jquery.flot.pie.js" />
+    <Content Include="lib\flot\jquery.flot.resize.js" />
+    <Content Include="lib\flot\jquery.flot.stack.js" />
+    <Content Include="lib\font-awesome\css\all.css" />
+    <Content Include="lib\font-awesome\css\font-awesome.css" />
+    <Content Include="lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="lib\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="lib\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="lib\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="lib\form-component.js" />
+    <Content Include="lib\form-validation-script.js" />
+    <Content Include="lib\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="lib\fullcalendar\fullcalendar.min.js" />
+    <Content Include="lib\google-maps\data\points.js" />
+    <Content Include="lib\google-maps\maplace.js" />
+    <Content Include="lib\gritter-conf.js" />
+    <Content Include="lib\gritter\css\jquery.gritter.css" />
+    <Content Include="lib\gritter\css\jquery.gritter0.css" />
+    <Content Include="lib\gritter\images\gritter-light.png" />
+    <Content Include="lib\gritter\images\gritter-long.png" />
+    <Content Include="lib\gritter\images\gritter.png" />
+    <Content Include="lib\gritter\images\ie-spacer.gif" />
+    <Content Include="lib\gritter\js\jquery.gritter.js" />
+    <Content Include="lib\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
+    <Content Include="lib\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="lib\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="lib\jquery.backstretch.min.js" />
+    <Content Include="lib\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="lib\jquery.nicescroll.js" />
+    <Content Include="lib\jquery.scrollTo.min.js" />
+    <Content Include="lib\jquery.sparkline.js" />
+    <Content Include="lib\jquery.tagsinput.js" />
+    <Content Include="lib\jquery.ui.touch-punch.min.js" />
+    <Content Include="lib\jquery\jquery.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="lib\morris-conf.js" />
+    <Content Include="lib\morris\morris.min.js" />
+    <Content Include="lib\php-mail-form\validate.js" />
+    <Content Include="lib\raphael\raphael.min.js" />
+    <Content Include="lib\select2\css\select2.css" />
+    <Content Include="lib\select2\css\select2.min.css" />
+    <Content Include="lib\select2\js\i18n\af.js" />
+    <Content Include="lib\select2\js\i18n\ar.js" />
+    <Content Include="lib\select2\js\i18n\az.js" />
+    <Content Include="lib\select2\js\i18n\bg.js" />
+    <Content Include="lib\select2\js\i18n\bn.js" />
+    <Content Include="lib\select2\js\i18n\bs.js" />
+    <Content Include="lib\select2\js\i18n\ca.js" />
+    <Content Include="lib\select2\js\i18n\cs.js" />
+    <Content Include="lib\select2\js\i18n\da.js" />
+    <Content Include="lib\select2\js\i18n\de.js" />
+    <Content Include="lib\select2\js\i18n\dsb.js" />
+    <Content Include="lib\select2\js\i18n\el.js" />
+    <Content Include="lib\select2\js\i18n\en.js" />
+    <Content Include="lib\select2\js\i18n\eo.js" />
+    <Content Include="lib\select2\js\i18n\es.js" />
+    <Content Include="lib\select2\js\i18n\et.js" />
+    <Content Include="lib\select2\js\i18n\eu.js" />
+    <Content Include="lib\select2\js\i18n\fa.js" />
+    <Content Include="lib\select2\js\i18n\fi.js" />
+    <Content Include="lib\select2\js\i18n\fr.js" />
+    <Content Include="lib\select2\js\i18n\gl.js" />
+    <Content Include="lib\select2\js\i18n\he.js" />
+    <Content Include="lib\select2\js\i18n\hi.js" />
+    <Content Include="lib\select2\js\i18n\hr.js" />
+    <Content Include="lib\select2\js\i18n\hsb.js" />
+    <Content Include="lib\select2\js\i18n\hu.js" />
+    <Content Include="lib\select2\js\i18n\hy.js" />
+    <Content Include="lib\select2\js\i18n\id.js" />
+    <Content Include="lib\select2\js\i18n\is.js" />
+    <Content Include="lib\select2\js\i18n\it.js" />
+    <Content Include="lib\select2\js\i18n\ja.js" />
+    <Content Include="lib\select2\js\i18n\ka.js" />
+    <Content Include="lib\select2\js\i18n\km.js" />
+    <Content Include="lib\select2\js\i18n\ko.js" />
+    <Content Include="lib\select2\js\i18n\lt.js" />
+    <Content Include="lib\select2\js\i18n\lv.js" />
+    <Content Include="lib\select2\js\i18n\mk.js" />
+    <Content Include="lib\select2\js\i18n\ms.js" />
+    <Content Include="lib\select2\js\i18n\nb.js" />
+    <Content Include="lib\select2\js\i18n\ne.js" />
+    <Content Include="lib\select2\js\i18n\nl.js" />
+    <Content Include="lib\select2\js\i18n\pa.js" />
+    <Content Include="lib\select2\js\i18n\pl.js" />
+    <Content Include="lib\select2\js\i18n\ps.js" />
+    <Content Include="lib\select2\js\i18n\pt-BR.js" />
+    <Content Include="lib\select2\js\i18n\pt.js" />
+    <Content Include="lib\select2\js\i18n\ro.js" />
+    <Content Include="lib\select2\js\i18n\ru.js" />
+    <Content Include="lib\select2\js\i18n\sk.js" />
+    <Content Include="lib\select2\js\i18n\sl.js" />
+    <Content Include="lib\select2\js\i18n\sq.js" />
+    <Content Include="lib\select2\js\i18n\sr-Cyrl.js" />
+    <Content Include="lib\select2\js\i18n\sr.js" />
+    <Content Include="lib\select2\js\i18n\sv.js" />
+    <Content Include="lib\select2\js\i18n\th.js" />
+    <Content Include="lib\select2\js\i18n\tk.js" />
+    <Content Include="lib\select2\js\i18n\tr.js" />
+    <Content Include="lib\select2\js\i18n\uk.js" />
+    <Content Include="lib\select2\js\i18n\vi.js" />
+    <Content Include="lib\select2\js\i18n\zh-CN.js" />
+    <Content Include="lib\select2\js\i18n\zh-TW.js" />
+    <Content Include="lib\select2\js\select2.full.js" />
+    <Content Include="lib\select2\js\select2.full.min.js" />
+    <Content Include="lib\select2\js\select2.js" />
+    <Content Include="lib\select2\js\select2.min.js" />
+    <Content Include="lib\sparkline-chart.js" />
+    <Content Include="lib\tasks.js" />
+    <Content Include="lib\treeview\jstree.min.js" />
+    <Content Include="lib\treeview\themes\default-dark\32px.png" />
+    <Content Include="lib\treeview\themes\default-dark\40px.png" />
+    <Content Include="lib\treeview\themes\default-dark\style.css" />
+    <Content Include="lib\treeview\themes\default-dark\style.min.css" />
+    <Content Include="lib\treeview\themes\default-dark\throbber.gif" />
+    <Content Include="lib\treeview\themes\default\32-1px.png" />
+    <Content Include="lib\treeview\themes\default\32px.png" />
+    <Content Include="lib\treeview\themes\default\40px.png" />
+    <Content Include="lib\treeview\themes\default\style.css" />
+    <Content Include="lib\treeview\themes\default\style.min.css" />
+    <Content Include="lib\treeview\themes\default\throbber.gif" />
+    <Content Include="lib\xchart\d3.v3.min.js" />
+    <Content Include="lib\xchart\xcharts.css" />
+    <Content Include="lib\xchart\xcharts.min.js" />
+    <Content Include="lib\zabuto_calendar.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ResearchSearch.aspx" />
+    <Content Include="OutStaff.aspx" />
+    <Content Include="OverAllResearchReport.aspx" />
+    <Content Include="plugins\animate\animate.css" />
+    <Content Include="plugins\dropify\css\dropify.css" />
+    <Content Include="plugins\dropify\css\dropify.min.css" />
+    <Content Include="plugins\dropify\fonts\dropify.svg" />
+    <Content Include="plugins\dropify\images\1.jpg" />
+    <Content Include="plugins\dropify\images\2.jpg" />
+    <Content Include="plugins\dropify\images\cover.jpg" />
+    <Content Include="plugins\dropify\js\dropify.js" />
+    <Content Include="plugins\dropify\js\dropify.min.js" />
+    <Content Include="plugins\jquery-mask-input\jquery.mask.min.js" />
+    <Content Include="plugins\select2\img\droparrows.png" />
+    <Content Include="plugins\select2\img\select2-spinner.gif" />
+    <Content Include="plugins\select2\img\select2.png" />
+    <Content Include="plugins\select2\img\select2x2.png" />
+    <Content Include="plugins\select2\select2.min.css" />
+    <Content Include="plugins\select2\select2.min.js" />
+    <Content Include="plugins\sweet-alert2\sweetalert2.min.css" />
+    <Content Include="plugins\sweet-alert2\sweetalert2.min.js" />
+    <Content Include="MeuRCV.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="WorkExperience.aspx" />
+    <Content Include="Conference.aspx" />
+    <Content Include="images\footer1.png" />
+    <Content Include="ResearchProjectSupportForm.aspx" />
+    <Content Include="ResearchGroupRegistrationForm.aspx" />
+    <Content Include="CWSSupportForm.aspx" />
+    <Content Include="CWSSupport.aspx" />
+    <Content Include="SupportAwardRep.aspx" />
+    <Content Include="WorkShopSeminarForm.aspx" />
+    <Content Include="ConferenceRequestForm.aspx" />
+    <Content Include="CourseDetails.aspx" />
+    <Content Include="CourseEval.aspx" />
+    <Content Include="CourseRegistration.aspx" />
+    <Content Include="CoverPageRectorOffice.aspx" />
+    <Content Include="CoverPageReDept.aspx" />
+    <Content Include="CoverPage.aspx" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\common-1.css" />
+    <Content Include="css\home_ar.css" />
+    <Content Include="css\materialdesignicons.min.css" />
+    <Content Include="css\NewCSSReport.css" />
+    <Content Include="css\pikaday.css" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="css\style1.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="css\triangle.css" />
+    <Content Include="css\websymbols\generator_config.txt" />
+    <Content Include="css\websymbols\specimen_files\easytabs.js" />
+    <Content Include="css\websymbols\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="css\websymbols\specimen_files\specimen_stylesheet.css" />
+    <Content Include="css\websymbols\specimen_files\websymbols-regular-cleartype.png" />
+    <Content Include="css\websymbols\stylesheet.css" />
+    <Content Include="css\websymbols\websymbols-regular-webfont.svg" />
+    <Content Include="css\websymbols\WebSymbolsRegular-demo.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="EvaluationExp.aspx" />
+    <Content Include="css\ExportStyle.css" />
+    <Content Include="FeeSetting.aspx" />
+    <Content Include="font\DroidKufi-Bold.svg" />
+    <Content Include="font\DroidKufi-Regular.svg" />
+    <Content Include="FullReport.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgCert.png" />
+    <Content Include="images\Cert.png" />
+    <Content Include="images\cert.svg" />
+    <Content Include="images\cert1.svg" />
+    <Content Include="images\cirtificate-new.jpg" />
+    <Content Include="images\Close.png" />
+    <Content Include="images\college.jpg" />
+    <Content Include="images\default-avatar.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\file.jpg" />
+    <Content Include="images\form.png" />
+    <Content Include="images\graduate.png" />
+    <Content Include="images\header-logo.svg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\mainR.jpg" />
+    <Content Include="images\Middle_East_University_logo.png" />
+    <Content Include="images\new_log.png" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\pdficon.ico" />
+    <Content Include="images\qs.jpg" />
+    <Content Include="images\questionmark.png" />
+    <Content Include="images\res.jpg" />
+    <Content Include="images\scopus.png" />
+    <Content Include="images\setting.jpg" />
+    <Content Include="images\tabieh_sig.png" />
+    <Content Include="images\training.jpg" />
+    <Content Include="images\uni.jpg" />
+    <Content Include="LinksDB.aspx" />
+    <Content Include="Loading.aspx" />
+    <Content Include="Login1.aspx" />
+    <Content Include="MasterReport.aspx" />
+    <Content Include="MasterReportView.aspx" />
+    <Content Include="moment.js" />
+    <Content Include="NewResearch.aspx" />
+    <Content Include="NewResearcher.aspx" />
+    <Content Include="new_js\materialize.min.css" />
+    <Content Include="new_js\NewCssMenu.css" />
+    <Content Include="new_js\pro.min.css" />
+    <Content Include="OldYears.aspx" />
+    <Content Include="PersonalInfo.aspx" />
+    <Content Include="pikaday.js" />
+    <Content Include="PublishedR.aspx" />
+    <Content Include="Qualifications.aspx" />
+    <Content Include="Questionnaire.aspx" />
+    <Content Include="RCertificate.aspx" />
+    <Content Include="RCommittees.aspx" />
+    <Content Include="ReasearchFileReport.aspx" />
+    <Content Include="ReCertificate.aspx" />
+    <Content Include="Requests.aspx" />
+    <Content Include="ResearchRankCertificate.aspx" />
+    <Content Include="ResearchRewardForm.aspx" />
+    <Content Include="ResearchFeeForm.aspx" />
+    <Content Include="ResearchRank.aspx" />
+    <Content Include="ResearchInterests.aspx" />
+    <Content Include="ResearchSupportForm.aspx" />
+    <Content Include="Resume.aspx" />
+    <Content Include="RFileMenu.aspx" />
+    <Content Include="RStatusRep.aspx" />
+    <Content Include="scripts\select2.min.js" />
+    <Content Include="CollegeComp.aspx" />
+    <Content Include="CourseCertificate.aspx" />
+    <Content Include="SecPrintRequests.aspx" />
+    <Content Include="ShowImageFile.aspx" />
+    <Content Include="signature\1357.jpg" />
+    <Content Include="signature\2164.jpg" />
+    <Content Include="signature\GS_Wared.png" />
+    <Content Include="signature\sign_gs.jpg" />
+    <Content Include="ThesisSup.aspx" />
+    <Content Include="UniAbstract.aspx" />
+    <Content Include="CollegeAbstract.aspx" />
+    <Content Include="IndexCollege.aspx" />
+    <Content Include="IndexUni.aspx" />
+    <Content Include="UniResearcher.aspx" />
+    <Content Include="CollegeResearcher.aspx" />
+    <Content Include="SupportAwardInfo.aspx" />
+    <Content Include="UniversityInfo.aspx" />
+    <Content Include="css\chosen-sprite%402x.png" />
+    <Content Include="css\chosen-sprite.png" />
+    <Content Include="css\chosen.min.css" />
+    <Content Include="css\NewCSS.css" />
+    <Content Include="images\newLogo.png" />
+    <Content Include="IndexResearcher.aspx" />
+    <Content Include="CollegeInfo.aspx" />
+    <Content Include="Info.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="scripts\chosen.jquery.min.js" />
+    <Content Include="scripts\jquery-3.4.1.min.js" />
+    <Content Include="Site1.Master" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WorkShops.aspx" />
+    <Content Include="NestedMasterPage1.master" />
+    <Content Include="font\DroidKufi-Bold.eot" />
+    <Content Include="font\DroidKufi-Bold.ttf" />
+    <Content Include="font\DroidKufi-Bold.woff" />
+    <Content Include="font\DroidKufi-Regular.eot" />
+    <Content Include="font\DroidKufi-Regular.ttf" />
+    <Content Include="font\DroidKufi-Regular.woff" />
+    <Content Include="new_js\analytics.js" />
+    <Content Include="new_js\jquery-1.8.3.js" />
+    <Content Include="new_js\materialize.min.js" />
+    <Content Include="new_js\owl.carousel.min.js" />
+    <Content Include="new_js\wp-embed.min.js" />
+    <Content Include="css\websymbols\websymbols-regular-webfont.eot" />
+    <Content Include="css\websymbols\websymbols-regular-webfont.ttf" />
+    <Content Include="css\websymbols\websymbols-regular-webfont.woff" />
+    <Content Include="document\القراءة الاحصائية والتحليل الكمي مستوى مبتدئ.pdf" />
+    <Content Include="font\Khalid-Art-bold.ttf" />
+    <Content Include="font\Al-Kharashi-20.ttf" />
+    <Content Include="font\MaterialIcons-Regular.eot" />
+    <Content Include="font\MaterialIcons-Regular.ttf" />
+    <Content Include="font\MaterialIcons-Regular.woff" />
+    <Content Include="font\MaterialIcons-Regular.woff2" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.js.map" />
+    <Content Include="bootstrap-4.0.0-dist\js\bootstrap.min.js.map" />
+    <Content Include="plugins\dropify\fonts\dropify.eot" />
+    <Content Include="plugins\dropify\fonts\dropify.ttf" />
+    <Content Include="plugins\dropify\fonts\dropify.woff" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="css\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="css\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="css\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="css\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="css\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="css\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="css\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="css\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="css\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="css\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="css\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="css\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="lib\advanced-datatable\images\Sorting icons.psd" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="lib\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="lib\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="lib\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="lib\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="lib\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="lib\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="lib\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="lib\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="lib\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="lib\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="lib\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="lib\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="lib\treeview\root.json" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
+    <Content Include="ShowFile.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\MEU.png" />
+    <Content Include="images\person.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Researcher.aspx" />
+    <Content Include="UploadData.aspx" />
+    <Content Include="UploadFiles.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievements.aspx.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Achievements.aspx.designer.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_FormInfo.aspx.cs">
+      <DependentUpon>Admin_FormInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_FormInfo.aspx.designer.cs">
+      <DependentUpon>Admin_FormInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_RequestsFollowUp.aspx.cs">
+      <DependentUpon>Admin_RequestsFollowUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_RequestsFollowUp.aspx.designer.cs">
+      <DependentUpon>Admin_RequestsFollowUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SupervisorReport.aspx.cs">
+      <DependentUpon>Admin_SupervisorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_SupervisorReport.aspx.designer.cs">
+      <DependentUpon>Admin_SupervisorReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WorkFlow.aspx.cs">
+      <DependentUpon>Admin_WorkFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_WorkFlow.aspx.designer.cs">
+      <DependentUpon>Admin_WorkFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agreement.aspx.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agreement.aspx.designer.cs">
+      <DependentUpon>Agreement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllRequests.aspx.cs">
+      <DependentUpon>AllRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllRequests.aspx.designer.cs">
+      <DependentUpon>AllRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AvailableCourse.aspx.cs">
+      <DependentUpon>AvailableCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AvailableCourse.aspx.designer.cs">
+      <DependentUpon>AvailableCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePW.aspx.cs">
+      <DependentUpon>ChangePW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePW.aspx.designer.cs">
+      <DependentUpon>ChangePW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_ExceptionLoad.aspx.cs">
+      <DependentUpon>Com_ExceptionLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_ExceptionLoad.aspx.designer.cs">
+      <DependentUpon>Com_ExceptionLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_JobTitles.aspx.cs">
+      <DependentUpon>Com_JobTitles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_JobTitles.aspx.designer.cs">
+      <DependentUpon>Com_JobTitles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_JournalDataBase.aspx.cs">
+      <DependentUpon>Com_JournalDataBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_JournalDataBase.aspx.designer.cs">
+      <DependentUpon>Com_JournalDataBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_OutSupervisor.aspx.cs">
+      <DependentUpon>Com_OutSupervisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_OutSupervisor.aspx.designer.cs">
+      <DependentUpon>Com_OutSupervisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_SupervisorAdoptedReport.aspx.cs">
+      <DependentUpon>Com_SupervisorAdoptedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_SupervisorAdoptedReport.aspx.designer.cs">
+      <DependentUpon>Com_SupervisorAdoptedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Com_SupervisorAdopted.aspx.cs">
+      <DependentUpon>Com_SupervisorAdopted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Com_SupervisorAdopted.aspx.designer.cs">
+      <DependentUpon>Com_SupervisorAdopted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FillOnlineReport.aspx.cs">
+      <DependentUpon>FillOnlineReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FillOnlineReport.aspx.designer.cs">
+      <DependentUpon>FillOnlineReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FollowUpFormThesisView.aspx.cs">
+      <DependentUpon>FollowUpFormThesisView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FollowUpFormThesisView.aspx.designer.cs">
+      <DependentUpon>FollowUpFormThesisView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FollowUpFormThesis.aspx.cs">
+      <DependentUpon>FollowUpFormThesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FollowUpFormThesis.aspx.designer.cs">
+      <DependentUpon>FollowUpFormThesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GS_ChangeTrack.aspx.cs">
+      <DependentUpon>GS_ChangeTrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GS_ChangeTrack.aspx.designer.cs">
+      <DependentUpon>GS_ChangeTrack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GS_NoObjection.aspx.cs">
+      <DependentUpon>GS_NoObjection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GS_NoObjection.aspx.designer.cs">
+      <DependentUpon>GS_NoObjection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GS_ThesisTitle.aspx.cs">
+      <DependentUpon>GS_ThesisTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GS_ThesisTitle.aspx.designer.cs">
+      <DependentUpon>GS_ThesisTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchSearch.aspx.cs">
+      <DependentUpon>ResearchSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchSearch.aspx.designer.cs">
+      <DependentUpon>ResearchSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutStaff.aspx.cs">
+      <DependentUpon>OutStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutStaff.aspx.designer.cs">
+      <DependentUpon>OutStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverAllResearchReport.aspx.cs">
+      <DependentUpon>OverAllResearchReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverAllResearchReport.aspx.designer.cs">
+      <DependentUpon>OverAllResearchReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MeuRCV.aspx.cs">
+      <DependentUpon>MeuRCV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeuRCV.aspx.designer.cs">
+      <DependentUpon>MeuRCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkExperience.aspx.cs">
+      <DependentUpon>WorkExperience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkExperience.aspx.designer.cs">
+      <DependentUpon>WorkExperience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference.aspx.cs">
+      <DependentUpon>Conference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference.aspx.designer.cs">
+      <DependentUpon>Conference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchProjectSupportForm.aspx.cs">
+      <DependentUpon>ResearchProjectSupportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchProjectSupportForm.aspx.designer.cs">
+      <DependentUpon>ResearchProjectSupportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchGroupRegistrationForm.aspx.cs">
+      <DependentUpon>ResearchGroupRegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchGroupRegistrationForm.aspx.designer.cs">
+      <DependentUpon>ResearchGroupRegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CWSSupportForm.aspx.cs">
+      <DependentUpon>CWSSupportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CWSSupportForm.aspx.designer.cs">
+      <DependentUpon>CWSSupportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CWSSupport.aspx.cs">
+      <DependentUpon>CWSSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CWSSupport.aspx.designer.cs">
+      <DependentUpon>CWSSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupportAwardRep.aspx.cs">
+      <DependentUpon>SupportAwardRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupportAwardRep.aspx.designer.cs">
+      <DependentUpon>SupportAwardRep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShopSeminarForm.aspx.cs">
+      <DependentUpon>WorkShopSeminarForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkShopSeminarForm.aspx.designer.cs">
+      <DependentUpon>WorkShopSeminarForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenceRequestForm.aspx.cs">
+      <DependentUpon>ConferenceRequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConferenceRequestForm.aspx.designer.cs">
+      <DependentUpon>ConferenceRequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseDetails.aspx.cs">
+      <DependentUpon>CourseDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseDetails.aspx.designer.cs">
+      <DependentUpon>CourseDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseEval.aspx.cs">
+      <DependentUpon>CourseEval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseEval.aspx.designer.cs">
+      <DependentUpon>CourseEval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseRegistration.aspx.cs">
+      <DependentUpon>CourseRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseRegistration.aspx.designer.cs">
+      <DependentUpon>CourseRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoverPageRectorOffice.aspx.cs">
+      <DependentUpon>CoverPageRectorOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoverPageRectorOffice.aspx.designer.cs">
+      <DependentUpon>CoverPageRectorOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoverPageReDept.aspx.cs">
+      <DependentUpon>CoverPageReDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoverPageReDept.aspx.designer.cs">
+      <DependentUpon>CoverPageReDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoverPage.aspx.cs">
+      <DependentUpon>CoverPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoverPage.aspx.designer.cs">
+      <DependentUpon>CoverPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EvaluationExp.aspx.cs">
+      <DependentUpon>EvaluationExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EvaluationExp.aspx.designer.cs">
+      <DependentUpon>EvaluationExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeSetting.aspx.cs">
+      <DependentUpon>FeeSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeSetting.aspx.designer.cs">
+      <DependentUpon>FeeSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FullReport.aspx.cs">
+      <DependentUpon>FullReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FullReport.aspx.designer.cs">
+      <DependentUpon>FullReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinksDB.aspx.cs">
+      <DependentUpon>LinksDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinksDB.aspx.designer.cs">
+      <DependentUpon>LinksDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.aspx.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loading.aspx.designer.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollegeComp.aspx.cs">
+      <DependentUpon>CollegeComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollegeComp.aspx.designer.cs">
+      <DependentUpon>CollegeComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterReport.aspx.cs">
+      <DependentUpon>MasterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterReport.aspx.designer.cs">
+      <DependentUpon>MasterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterReportView.aspx.cs">
+      <DependentUpon>MasterReportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterReportView.aspx.designer.cs">
+      <DependentUpon>MasterReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.designer.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    </Compile>
+    <Compile Include="NewResearch.aspx.cs">
+      <DependentUpon>NewResearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewResearch.aspx.designer.cs">
+      <DependentUpon>NewResearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewResearcher.aspx.cs">
+      <DependentUpon>NewResearcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewResearcher.aspx.designer.cs">
+      <DependentUpon>NewResearcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OldYears.aspx.cs">
+      <DependentUpon>OldYears.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OldYears.aspx.designer.cs">
+      <DependentUpon>OldYears.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInfo.aspx.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalInfo.aspx.designer.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublishedR.aspx.cs">
+      <DependentUpon>PublishedR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublishedR.aspx.designer.cs">
+      <DependentUpon>PublishedR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Qualifications.aspx.cs">
+      <DependentUpon>Qualifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qualifications.aspx.designer.cs">
+      <DependentUpon>Qualifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Questionnaire.aspx.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Questionnaire.aspx.designer.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RCertificate.aspx.cs">
+      <DependentUpon>RCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RCertificate.aspx.designer.cs">
+      <DependentUpon>RCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RCommittees.aspx.cs">
+      <DependentUpon>RCommittees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RCommittees.aspx.designer.cs">
+      <DependentUpon>RCommittees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReasearchFileReport.aspx.cs">
+      <DependentUpon>ReasearchFileReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReasearchFileReport.aspx.designer.cs">
+      <DependentUpon>ReasearchFileReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReCertificate.aspx.cs">
+      <DependentUpon>ReCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReCertificate.aspx.designer.cs">
+      <DependentUpon>ReCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchRankCertificate.aspx.cs">
+      <DependentUpon>ResearchRankCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchRankCertificate.aspx.designer.cs">
+      <DependentUpon>ResearchRankCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchRewardForm.aspx.cs">
+      <DependentUpon>ResearchRewardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchRewardForm.aspx.designer.cs">
+      <DependentUpon>ResearchRewardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchFeeForm.aspx.cs">
+      <DependentUpon>ResearchFeeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchFeeForm.aspx.designer.cs">
+      <DependentUpon>ResearchFeeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchRank.aspx.cs">
+      <DependentUpon>ResearchRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchRank.aspx.designer.cs">
+      <DependentUpon>ResearchRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchInterests.aspx.cs">
+      <DependentUpon>ResearchInterests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchInterests.aspx.designer.cs">
+      <DependentUpon>ResearchInterests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResearchSupportForm.aspx.cs">
+      <DependentUpon>ResearchSupportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResearchSupportForm.aspx.designer.cs">
+      <DependentUpon>ResearchSupportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resume.aspx.designer.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RFileMenu.aspx.cs">
+      <DependentUpon>RFileMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RFileMenu.aspx.designer.cs">
+      <DependentUpon>RFileMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RStatusRep.aspx.cs">
+      <DependentUpon>RStatusRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RStatusRep.aspx.designer.cs">
+      <DependentUpon>RStatusRep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecPrintRequests.aspx.cs">
+      <DependentUpon>SecPrintRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecPrintRequests.aspx.designer.cs">
+      <DependentUpon>SecPrintRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowFile.ashx.cs">
+      <DependentUpon>ShowFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseCertificate.aspx.cs">
+      <DependentUpon>CourseCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseCertificate.aspx.designer.cs">
+      <DependentUpon>CourseCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowImageFile.aspx.cs">
+      <DependentUpon>ShowImageFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowImageFile.aspx.designer.cs">
+      <DependentUpon>ShowImageFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThesisSup.aspx.cs">
+      <DependentUpon>ThesisSup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThesisSup.aspx.designer.cs">
+      <DependentUpon>ThesisSup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UniAbstract.aspx.cs">
+      <DependentUpon>UniAbstract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UniAbstract.aspx.designer.cs">
+      <DependentUpon>UniAbstract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollegeAbstract.aspx.cs">
+      <DependentUpon>CollegeAbstract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollegeAbstract.aspx.designer.cs">
+      <DependentUpon>CollegeAbstract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCollege.aspx.cs">
+      <DependentUpon>IndexCollege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexCollege.aspx.designer.cs">
+      <DependentUpon>IndexCollege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexUni.aspx.cs">
+      <DependentUpon>IndexUni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexUni.aspx.designer.cs">
+      <DependentUpon>IndexUni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UniResearcher.aspx.cs">
+      <DependentUpon>UniResearcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UniResearcher.aspx.designer.cs">
+      <DependentUpon>UniResearcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollegeResearcher.aspx.cs">
+      <DependentUpon>CollegeResearcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollegeResearcher.aspx.designer.cs">
+      <DependentUpon>CollegeResearcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupportAwardInfo.aspx.cs">
+      <DependentUpon>SupportAwardInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupportAwardInfo.aspx.designer.cs">
+      <DependentUpon>SupportAwardInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UniversityInfo.aspx.cs">
+      <DependentUpon>UniversityInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UniversityInfo.aspx.designer.cs">
+      <DependentUpon>UniversityInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexResearcher.aspx.cs">
+      <DependentUpon>IndexResearcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexResearcher.aspx.designer.cs">
+      <DependentUpon>IndexResearcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollegeInfo.aspx.cs">
+      <DependentUpon>CollegeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollegeInfo.aspx.designer.cs">
+      <DependentUpon>CollegeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Researcher.aspx.cs">
+      <DependentUpon>Researcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Researcher.aspx.designer.cs">
+      <DependentUpon>Researcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UploadData.aspx.cs">
+      <DependentUpon>UploadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadData.aspx.designer.cs">
+      <DependentUpon>UploadData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadFiles.aspx.cs">
+      <DependentUpon>UploadFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadFiles.aspx.designer.cs">
+      <DependentUpon>UploadFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkShops.aspx.cs">
+      <DependentUpon>WorkShops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkShops.aspx.designer.cs">
+      <DependentUpon>WorkShops.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53442</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53442/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

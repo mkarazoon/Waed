@@ -1,0 +1,137 @@
+﻿@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(../font/DroidKufi-Regular.woff) format('woff'), url(../font/DroidKufi-Regular.ttf) format('truetype');
+}
+
+body {
+    direction: rtl;
+    font-family: 'Droid Arabic Kufi' !important;
+}
+.contentDiv {
+    border-radius: 5px;
+    width: 95%;
+    margin: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    font-size: 100%;
+    border:2px outset;
+    padding:10px;
+}
+
+.lblDiv {
+    float: right;
+    background-color: #921a1d !important;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    color: white;
+}
+
+.lblContentDiv {
+    float: right;
+    padding: 10px;
+    margin: 0 2px 0 2px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border: 1px inset;
+    background-color: #fcb131;
+    color:white;
+}
+
+.TitleDiv {
+    background-color: #921a1d !important;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    color: white;
+    margin: 1% auto 1% auto;
+    width: 90%;
+    font-size:1.5vw;
+}
+
+.headerDiv {
+    width: 100%;
+    margin: 0 auto 10px auto;
+    box-sizing:border-box;
+}
+
+.btn {
+    border-radius: 6px;
+    width: 80px;
+    padding: 5px;
+    color: white;
+    background-color: #921A1D;
+    font-size: small;
+    font-family: 'Droid Arabic Kufi' !important;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+
+    .btn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        color:black;
+    }
+
+/*.print-only {
+    display: none;
+    direction: rtl;
+}*/
+
+.hidden{
+    display:none;
+}
+
+/*.grd {
+    text-align: center;
+    color: black;
+    Border: 1px solid black;
+}
+
+    .grd th {
+        padding: 8px;
+        background-color:#7f7f7f;
+        color:white;
+
+    }
+
+article {
+    float: right;
+    padding: 1%;
+    width: 77%;
+    background-color: #f1f1f1;
+    margin-bottom:20px;
+    max-width:100%;
+}
+
+
+
+.img {
+    float: right;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left:5px;
+}
+
+.divFile{
+    display:inline-block;
+    padding:20px;
+    margin:25px;
+    border:3px outset;
+}*/
+
+
+

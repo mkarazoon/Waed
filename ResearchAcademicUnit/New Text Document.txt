@@ -1,0 +1,9 @@
+#e8ebeb page
+
+chart 808785 opacity 0.21
+
+title d9971a
+
+الخمري  a61702
+
+الرمادي 808785

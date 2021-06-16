@@ -1,0 +1,125 @@
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.exe
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.exe.config
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.rsp
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csi.exe
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csi.rsp
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.AppContext.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Collections.Immutable.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.IO.FileSystem.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Reflection.Metadata.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.exe
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.exe.config
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.rsp
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\VBCSCompiler.exe
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\VBCSCompiler.exe.config
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+E:\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojResolveAssemblyReference.cache
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.exe
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.exe.config
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csc.rsp
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csi.exe
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\csi.rsp
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.AppContext.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Collections.Immutable.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.IO.FileSystem.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\System.Reflection.Metadata.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.exe
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.exe.config
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\vbc.rsp
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\VBCSCompiler.exe
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\roslyn\VBCSCompiler.exe.config
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\DevOne.Security.Cryptography.BCrypt.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.xml
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojResolveAssemblyReference.cache
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+E:\All Plrojects Last one\MEU Projects\ResearchAcademicUnit\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.dll
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\DevOne.Security.Cryptography.BCrypt.dll
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.xml
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CoreCompileInputs.cache
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CopyComplete
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojAssemblyReference.cache
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.dll
+F:\MEU Projects\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.xml
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.dll
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\DevOne.Security.Cryptography.BCrypt.dll
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.dll
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.xml
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.xml
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojResolveAssemblyReference.cache
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+E:\All Plrojects Last one\ResearchAcademicUnit - Copy\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\DevOne.Security.Cryptography.BCrypt.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.pdfa.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.xml
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.ResolveComReference.cache
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CoreCompileInputs.cache
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CopyComplete
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojAssemblyReference.cache
+F:\MEU Projects\ResearchAcademicUnit - New\ResearchAcademicUnit\ResearchAcademicUnit\bin\Oracle.ManagedDataAccess.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csprojAssemblyReference.cache
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.ResolveComReference.cache
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CoreCompileInputs.cache
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll.config
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\ResearchAcademicUnit.pdb
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\DevOne.Security.Cryptography.BCrypt.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\itextsharp.pdfa.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\Oracle.ManagedDataAccess.dll
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\bin\BCrypt.Net-Next.xml
+F:\MEU Projects\ResearchAcademicUnit - New Design\ResearchAcademicUnit\ResearchAcademicUnit\obj\Release\ResearchAcademicUnit.csproj.CopyComplete

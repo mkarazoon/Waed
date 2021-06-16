@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="ResearchAcademicUnit.NestedMasterPage1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="css/style1.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section>
+        <nav>
+            <ul class="ca-menu" id="myMenu" runat="server">
+                <li runat="server" id="menu1">
+                    <asp:LinkButton runat="server" ID="pinfo" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">&#xe68f</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">المعلومات الشخصية والوظيفية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+
+                <li runat="server" id="menu3">
+                    <asp:LinkButton runat="server" ID="rCare" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الاهتمامات البحثية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+
+                <li runat="server" id="menu2">
+                    <asp:LinkButton runat="server" ID="qual" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">&#x2695;</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">المؤهلات العلمية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton></li>
+                <li runat="server" id="menu15">
+                    <asp:LinkButton runat="server" ID="workexp" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الخبرات العملية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+
+                <li runat="server" id="menu4">
+                    <asp:LinkButton runat="server" ID="links" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">روابط الباحث في المواقع البحثية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu5">
+                    <asp:LinkButton runat="server" ID="evalexp" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">خبرات التحكييم والتقييم</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu6">
+                    <asp:LinkButton runat="server" ID="rpublished" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الأبحاث المنشورة</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu7">
+                    <asp:LinkButton runat="server" ID="conf" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">المؤتمرات</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu8">
+                    <asp:LinkButton runat="server" ID="books" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">النشاطات التأليفية - الكتب</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu9">
+                    <asp:LinkButton runat="server" ID="train" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الندوات والدورات وورش العمل البحثية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu10">
+                    <asp:LinkButton runat="server" ID="racheiv" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الانجازات الابتكارية والريادية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu11">
+                    <asp:LinkButton runat="server" ID="committe" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">العضوية في اللجان البحثية</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu16">
+                    <asp:LinkButton runat="server" ID="thesis" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">الرسائل التي أشرف عليها/ناقشها</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+
+                <li runat="server" id="menu12">
+                    <asp:LinkButton runat="server" ID="cert" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">شهادات التميز البحثي</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu13" visible="false">
+                    <asp:LinkButton runat="server" ID="upload" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">تحميل ملفات النتاج البحثي</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+                <li runat="server" id="menu14">
+                    <asp:LinkButton runat="server" ID="Resume" OnClick="setActive" CausesValidation="false">
+                                    <%--<span class="ca-icon">A</span>--%>
+                                    <div class="ca-content">
+                                        <h2 class="ca-main">عرض السيرة البحثية ( طباعة | PDF )</h2>
+                                        <h3 class="ca-sub"></h3> 
+                                    </div>
+                    </asp:LinkButton>
+                </li>
+
+            </ul>
+        </nav>
+        <article id="prinDiv">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </article>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+</asp:Content>

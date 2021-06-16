@@ -1,0 +1,566 @@
+﻿@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(../font/DroidKufi-Regular.woff) format('woff'), url(../font/DroidKufi-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    transition: 0.35s ease;
+}
+
+.grd {
+    text-align: center;
+    color: black;
+    Border: 1px solid black;
+    font-size:12px;
+    width:100%;
+    
+}
+
+    .grd th {
+        padding: 8px;
+        background-color: #7f7f7f;
+        color: white;
+    }
+.rela-block {
+    display: block;
+    position: relative;
+    margin: auto;
+    top:;
+    left:;
+    right:;
+    bottom:;
+}
+
+.rela-inline {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    width:100%;
+    top:20px;
+    left:;
+    right:;
+    bottom:;
+}
+
+.floated {
+    display: inline-block;
+    position: relative;
+    /*margin: 50% ;*/
+    /*color:red;*/
+    width: 25%;
+    top: -25px;
+    background-color: #253847;
+    color: white;
+    /*left:;
+    right:;
+    bottom:;*/
+    /*float: left;*/
+    text-align: center;
+    border: 1px outset;
+    border-radius: 25%;
+    /*border-bottom-left-radius: 25%;*/
+    padding: 1%;
+    /*padding-bottom: 1%;*/
+}
+
+.abs-center {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 115%;
+    left: 50%;
+    right: false;
+    bottom: false;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1.1vw;
+    line-height: 36px;
+    border:1px solid;
+}
+
+body {
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 28px;
+    background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
+    background-size: cover;
+    direction: rtl;
+}
+
+    body:before {
+        content: "";
+        display: false;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.92);
+    }
+
+.caps {
+    text-transform: uppercase;
+}
+
+.justified {
+    
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+p.light {
+    color: #777;
+}
+
+h2 {
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #000;
+}
+
+h3 {
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 21px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000;
+}
+
+.page {
+    width: 100%;
+    /*max-width: 1200px;*/
+    /*margin: 80px auto;*/
+    background-color: #fff;
+    /*box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.4);*/
+    page-break-after: always;
+}
+
+.top-bar {
+    height: 220px;
+    background-color: #848484;
+    color: #fff;
+}
+
+.name {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: false;
+    right: calc(350px + 5%);
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    text-align: center;
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 50px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+    .name div {
+        width: 94%;
+    }
+
+.side-bar {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 0px;
+    right: 0;
+    left: false;
+    bottom: 0;
+    width: 350px;
+    background-color: #253847;
+    padding: 80px 30px 500px;
+    color: white;
+    /*border: 3px solid white;*/
+    page-policy:first;
+}
+
+@media print {
+    .side-bar {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .floated {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        top: -20px;
+        background-color: #253847;
+        color: white;
+        font-size:14px;
+        text-align: center;
+        border: 1px outset;
+        border-radius: 25%;
+        padding: 1%;
+    }
+}
+
+.btn {
+    border-radius: 6px;
+    width: 80px;
+    padding: 5px;
+    color: white;
+    background-color: #921A1D;
+    font-size: small;
+    font-family: 'Droid Arabic Kufi' !important;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+}
+
+    .btn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        color: black;
+    }
+.mugshot {
+    display: false;
+    position: absolute;
+    /*margin: false;*/
+    top: 50px;
+    left: 140px;
+    right: false;
+    bottom: false;
+    height: 105px;
+    width: 105px;
+}
+
+    .mugshot .logo {
+        margin: -23px;
+    }
+
+.logo {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 0;
+    left: 0;
+    right: false;
+    bottom: false;
+    z-index: 100;
+    margin: 0;
+    color: #000;
+    height: 125px;
+    width: 125px;
+}
+
+    .logo .logo-svg {
+        height: 100%;
+        width: 100%;
+        stroke: #000;
+        /*cursor: pointer;*/
+        border-radius: 50%;
+    }
+
+    .logo .logo-text {
+        display: false;
+        position: absolute;
+        margin: false;
+        top: 58%;
+        left:;
+        right: 16%;
+        bottom:;
+        cursor: pointer;
+        font-family: "Montserrat";
+        font-size: 55px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        line-height: 58.333333333333336px;
+    }
+
+.social {
+    padding-left: 60px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+    .social:before {
+        content: "";
+        display: false;
+        position: absolute;
+        margin: false;
+        top: -4px;
+        left: 10px;
+        right: false;
+        bottom: false;
+        height: 35px;
+        width: 35px;
+        background-size: cover !important;
+    }
+
+    .social.twitter:before {
+        background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
+    }
+
+    .social.pinterest:before {
+        background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
+    }
+
+    .social.linked-in:before {
+        background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+    }
+
+.side-header {
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 60px auto 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #888;
+}
+
+.side-header1 {
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 10px auto 30px;
+    padding-bottom: 25px;
+    text-align:center;
+}
+
+.list-thing {
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    margin-left: 0;
+    width: calc(95% - 300px);
+    padding: 25px 20px 50px;
+}
+
+    .content-container > * {
+        margin: 0 auto 25px;
+    }
+
+    .content-container > h3 {
+        margin: 0 auto 5px;
+    }
+
+    .content-container > p.long-margin {
+        margin: 0 auto 50px;
+    }
+
+.title {
+    width: 80%;
+    text-align: center;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #999;
+}
+
+.greyed {
+    background-color: #ddd;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Droid Arabic Kufi' !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    padding:2px;
+}
+
+p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1150px) {
+    .name {
+        color: #fff;
+        font-family: 'Raleway';
+        font-size: 38px;
+        letter-spacing: 0px;
+        font-weight: 100;
+        line-height: 48px;
+    }
+}
+
+/*end of Common Style*/
+/*Time Line Style*/
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+    .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+        line-height: inherit;
+    }
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+}
+
+    .timeline-item:last-child {
+        padding-bottom: 0;
+    }
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    /*letter-spacing: 3px;*/
+    margin: 0 0 .5em 0;
+    /*text-transform: uppercase;*/
+    white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+    .timeline-marker:before {
+        background: #FF6B6B;
+        border: 3px solid transparent;
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 15px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 15px;
+        transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+    }
+
+    .timeline-marker:after {
+        content: "";
+        width: 3px;
+        background: #CCD5DB;
+        display: block;
+        position: absolute;
+        top: 24px;
+        bottom: 0;
+        left: 6px;
+    }
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #FF6B6B;
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+    padding-bottom: 40px;
+}
+
+    .timeline-content p:last-child {
+        margin-bottom: 0;
+    }
+
+/*----- TIMELINE PERIOD -----*/
+.period {
+    padding: 0;
+}
+
+    .period .timeline-info {
+        display: none;
+    }
+
+    .period .timeline-marker:before {
+        background: transparent;
+        content: "";
+        width: 15px;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        top: 0;
+        bottom: 30px;
+        position: absolute;
+        border-top: 3px solid #CCD5DB;
+        border-bottom: 3px solid #CCD5DB;
+    }
+
+    .period .timeline-marker:after {
+        content: "";
+        height: 32px;
+        top: auto;
+    }
+
+    .period .timeline-content {
+        padding: 20px 0 70px;
+    }
+
+    .period .timeline-title {
+        margin: 0;
+    }
+
+/*----------------------------------------------
+    MOD: TIMELINE SPLIT
+----------------------------------------------*/
+@media (min-width: 520px) {
+    .timeline-split .timeline, .timeline-centered .timeline {
+        display: table;
+    }
+
+    .timeline-split .timeline-item, .timeline-centered .timeline-item {
+        display: table-row;
+        padding: 0;
+    }
+
+    .timeline-split .timeline-info, .timeline-centered .timeline-info,
+    .timeline-split .timeline-marker,
+    .timeline-centered .timeline-marker,
+    .timeline-split .timeline-content,
+    .timeline-centered .timeline-content,
+    .timeline-split .period .timeline-info,
+    .timeline-centered .period .timeline-info {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+        position: relative;
+    }
+
+    .timeline-split .timeline-content, .timeline-centered .timeline-content {
+        padding-right: 30px;
+    }
+
+    .timeline-split .timeline-info, .timeline-centered .timeline-info {
+        padding-left: 30px;
+    }
+
+    .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+        position: relative;
+        right: -45px;
+    }
+}
+

@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ResearchAcademicUnit.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <title>بوابة البحث العلمي - جامعة الشرق الأوسط</title>
+    <link href="css/NewCSS.css" rel="stylesheet" />
+    <style type="text/css">
+        .ss{
+            background-color: #f5f5f5;
+        }
+        .nomargin{
+            margin-top: 100px;
+        }
+        @media print {
+
+            .print-only {
+                display: block;
+            }
+
+            .headerDiv {
+                color: black;
+            }
+
+            .lblContentDiv {
+                color: black;
+            }
+
+            .hd {
+                display: none;
+            }
+
+            .img {
+                filter: invert(100%) hue-rotate(180deg) brightness(120%);
+            }
+            .nomargin{
+                margin-top:0px;
+            }
+        }
+    </style>
+    <link  rel="shortcut icon" href="images/favicon.png" />
+    <script language="javascript" type="text/javascript">
+        function test(divName, flag) {
+            var printContents = document.getElementById(divName).innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+            document.location.href = document.URL;// "PrintStudSeatsFinal.aspx";
+            if (flag == 1) {
+                __doPostBack("btn");
+            }
+        }
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+        $(document).ready(function() {
+        window.history.pushState(null, "", window.location.href);        
+        window.onpopstate = function() {
+            window.history.pushState(null, "", window.location.href);
+        };
+    });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" rel="stylesheet" />
+<%--        <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div  id="mainDiv">
+<%--            <div class="row">
+                <div class="form-group col-md-4">
+                    <a href="http://www.meu.edu.jo" target="_blank">
+                    <img src="images/header-logo.svg" style="margin-right: 20px; margin-top: 28px;width:500px" />
+                        </a>
+                </div>
+                <div class="form-group col-md-4">
+                    <asp:Label ID="lblPageName" runat="server" Text=""></asp:Label><br />
+                    <asp:Label ID="lblUserName" runat="server" Text=""></asp:Label>
+                </div>
+                <div class="form-group col-md-4">
+                                        عمادة الدراسات العليا والبحث العلمي<br />
+                    
+                                        <br />
+                    <asp:Label ID="lblDate" runat="server" Text=""></asp:Label>
+
+                </div>
+</div>
+                <div class="form-group col-md-4 mt-auto">
+                    <asp:Button ID="btnHome" CausesValidation="false" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="الرئيسية" OnClick="btnHome_Click" CssClass="btn" formnovalidate="formnovalidate"/>
+                    <input type="button" id="btnPrint" runat="server" style="margin-left: 10px; margin-right: 10px" class="btn" onclick="test('printDiv', 1);" value="    طباعة    "/>
+                    <asp:Button ID="btnBack" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="رجوع" OnClick="btnBack_Click" CssClass="btn" CausesValidation="False" formnovalidate="formnovalidate"/>
+                    <asp:Button ID="btnLogout" CausesValidation="false" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="تسجيل خروج" OnClick="btnLogout_Click" CssClass="btn"  formnovalidate="formnovalidate" />
+                </div>--%>
+            
+            <div class="headerDiv" style="display: block; height: 100px; border-bottom-style: groove; box-sizing: border-box; background-color: white; position: fixed; z-index: 10;">
+                <div style="float: right; width: 20%; height: 100px; text-align: center; display: inline-flex">
+                    <a href="http://www.meu.edu.jo" target="_blank">
+                    <img src="images/header-logo.svg" style="margin-right: 20px; margin-top: 28px;width:500px" />
+                        </a>
+                </div>
+                <div style="float: left; width: 15%; text-align: center; font-size: 80%; height: 100px; padding-top: 10px">
+                    عمادة الدراسات العليا والبحث العلمي<br />
+                    
+                                        <br />
+                    <asp:Label ID="lblDate" runat="server" Text=""></asp:Label>
+                </div>
+                <div id="logDiv" runat="server" style="float: left; padding: 10px; box-sizing: border-box; width: 20%; margin-top: 20px; direction:ltr;display:flex;">
+                    <asp:Button ID="btnHome" CausesValidation="false" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="الرئيسية" OnClick="btnHome_Click" CssClass="btn" formnovalidate="formnovalidate"/>
+                    <input type="button" id="btnPrint" runat="server" style="margin-left: 10px; margin-right: 10px" class="btn" onclick="test('printDiv', 1);" value="    طباعة    "/>
+                    <asp:Button ID="btnBack" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="رجوع" OnClick="btnBack_Click" CssClass="btn" CausesValidation="False" formnovalidate="formnovalidate"/>
+                    <asp:Button ID="btnLogout" CausesValidation="false" Style="margin-left: 10px; margin-right: 10px" runat="server" Text="تسجيل خروج" OnClick="btnLogout_Click" CssClass="btn"  formnovalidate="formnovalidate" />
+                </div>
+                <div class="hd" style="float: left">
+                    <asp:Label ID="lblPageName" runat="server" Text=""></asp:Label><br />
+                    <asp:Label ID="lblUserName" runat="server" Text=""></asp:Label>
+                </div>
+
+
+                <div style="clear: both"></div>
+            </div>
+            <div id="printDiv">
+                <div class="print-only" id="prinOut" runat="server">
+                    <div style="float: right; width: 25%; text-align: center; padding-top: 10px">
+                        جامعة الشرق الأوسط<br />
+                        MIDDLE EAST UNIVERSITY<br />
+                        AMMAN
+                    </div>
+                    <div class="print-only" style="float: right; width: 49%; text-align: center; padding-top: 10px;">
+                        تقرير الاستعلام البحثي
+                            <p>التاريخ: <span><%= DateTime.Now.ToString("dd-MM-yyyy") %></span></p>
+                    </div>
+                    <div style="float: left; width: 25%; text-align: center; padding-top: 10px; font-size: 100%">
+                        عمادة الدراسات العليا والبحث العلمي<br />
+                        قسم البحث العلمي
+                        <br />
+                        <asp:Label ID="lblInfo" runat="server" Text=""></asp:Label>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="nomargin">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <p class="print-only" id="printfooter" runat="server">محددات التقرير: هذا التقرير خاص بالنتاج البحثي المنجز تحت مظلة الجامعة ومفهرس في قاعدة بيانات سكوبس</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
